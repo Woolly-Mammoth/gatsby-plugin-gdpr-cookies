@@ -70,17 +70,6 @@ exports.initializeGoogleTagManager = (options) => {
 }
 
 exports.trackGoogleTagManager = (options, location) => {
-  // console.log(`tracking tag manager`)
-  if (
-    getCookie(options.cookieName) === `true` &&
-    validGTMTrackingId(options) &&
-    typeof window.gtag === `function`
-  ) {
-    const pagePath = location
-      ? location.pathname + location.search + location.hash
-      : undefined
-    window.gtag(`event`, `page_view`, { page_path: pagePath })
-  }
   setTimeout(() => {
     const data = options.dataLayerName
       ? window[options.dataLayerName]
