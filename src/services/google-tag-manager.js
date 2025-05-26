@@ -62,10 +62,10 @@ exports.initializeGoogleTagManager = (options) => {
     gaAllowAdFeatures =
       gaAllowAdFeatures !== undefined ? gaAllowAdFeatures : true
 
-    window.gtag(`config`, options.trackingId, {
-      anonymize_ip: gaAnonymize,
-      allow_google_signals: gaAllowAdFeatures,
-    })
+    // window.gtag(`config`, options.trackingId, {
+    //   anonymize_ip: gaAnonymize,
+    //   allow_google_signals: gaAllowAdFeatures,
+    // })
   }
 }
 

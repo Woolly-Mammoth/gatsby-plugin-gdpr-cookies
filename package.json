@@ -1,13 +1,41 @@
 {
-  "name": "gatsby-plugin-gdpr-cookies",
-  "description": "Gatsby plugin to add google analytics, google tag manager facebook pixel, tik tok pixel and hotjar in a gdpr form to your site. Consent coming soon.",
-  "version": "2.0.9",
-  "author": "Andre Zimpel <andre@unknownbasics.com>",
-  "bugs": {
-    "url": "https://github.com/andrezimpel/gatsby-plugin-gdpr-cookies/issues"
+  "name": "gatsby-plugin-gdpr-cookies-woolly",
+  "version": "2.0.10",
+  "description": "Gatsby plugin to add Google Analytics, Google Tag Manager, Facebook Pixel, TikTok Pixel, and Hotjar in a GDPR-compliant form.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "author": "Woolly Mammoth",
+  "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "google analytics",
+    "facebook pixel",
+    "google tag manager",
+    "gdpr cookies",
+    "cookies",
+    "cookie consent",
+    "tiktok",
+    "hotjar"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Woolly-Mammoth/gatsby-plugin-gdpr-cookies.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Woolly-Mammoth/gatsby-plugin-gdpr-cookies/issues"
+  },
+  "homepage": "https://github.com/Woolly-Mammoth/gatsby-plugin-gdpr-cookies#readme",
   "dependencies": {
     "@babel/runtime": "^7.11.2"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.24.77 || ^3.0.0 || ^4.0.0 || ^5.0.0",
+    "react": "^16.13.1 || ^17.0.1 || ^18.0.0",
+    "react-dom": "^16.13.1 || ^17.0.1 || ^18.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.11.6",
@@ -29,33 +57,6 @@
     "lodash": "^4.17.20",
     "prettier": "^2.1.2"
   },
-  "homepage": "https://github.com/andrezimpel/gatsby-plugin-gdpr-cookies#readme",
-  "keywords": [
-    "gatsby",
-    "gatsby-plugin",
-    "google analytics",
-    "facebook pixel",
-    "google tag manager",
-    "gdpr cookies",
-    "dsgvo",
-    "cookies",
-    "cookie consent",
-    "tik tok",
-    "tiktok",
-    "hotjar"
-  ],
-  "license": "MIT",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "peerDependencies": {
-    "gatsby": "^2.24.77 || ^3.0.0 || ^4.0.0 || ^5.0.0",
-    "react": "^16.13.1 || ^17.0.1 || ^18.0.0",
-    "react-dom": "^16.13.1 || ^17.0.1 || ^18.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andrezimpel/gatsby-plugin-gdpr-cookies.git"
-  },
   "scripts": {
     "build": "babel src --out-dir . --ignore **/__tests__",
     "prepare": "cross-env NODE_ENV=production npm run build",
@@ -64,5 +65,6 @@
   },
   "engines": {
     "node": ">=8.0.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
